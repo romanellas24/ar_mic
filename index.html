@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js + WebM Alpha</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Floating Clean-Fullscreen Button -->
+  <button id="clean-fullscreen-btn">⛶</button>
+
+  <button id="change-len-btn">ENG</button>
+
+  <body style="margin: 0; overflow: hidden">
+    <!-- AR SCENE -->
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      renderer="alpha: true; antialias: true;"
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+      <!-- DRAGO -->
+      <a-assets id="drago_container">
+        <video
+          id="drago-video"
+          src="./drago/drago_ITA.webm"
+          autoplay
+          loop
+          playsinline
+          crossorigin="anonymous"
+        ></video>
+      </a-assets>
+
+      <a-marker
+        type="pattern"
+        url="./drago/pattern-drago.patt"
+        smoothCount="0"
+        smoothTolerance="0.0001"
+      >
+        <a-plane
+          src="#drago-video"
+          width="10"
+          height="10"
+          position="0 0.01 0"
+          rotation="-90 0 0"
+          material="transparent: true; side: double; alphaTest: 0.001;"
+        ></a-plane>
+      </a-marker>
+
+      <!-- BODHISATTVA -->
+      <a-assets id="bod_container">
+        <video
+          id="bod-video"
+          src="./bod/bod_ITA.webm"
+          autoplay
+          loop
+          playsinline
+          crossorigin="anonymous"
+        ></video>
+      </a-assets>
+      <a-marker
+        type="pattern"
+        url="./bod/pattern-bod.patt"
+        smoothCount="0"
+        smoothTolerance="0.0001"
+      >
+        <a-plane
+          src="#bod-video"
+          width="10"
+          height="10"
+          position="0 0.01 0"
+          rotation="-90 0 0"
+          material="transparent: true; side: double; alphaTest: 0.001;"
+        ></a-plane>
+      </a-marker>
+
+      <!-- LU -->
+      <a-assets id="Lu">
+        <video
+          id="lu-video"
+          src="./lu_video.webm"
+          autoplay
+          loop
+          playsinline
+          crossorigin="anonymous"
+        ></video>
+      </a-assets>
+      <a-marker
+        type="pattern"
+        url="./pattern-drago.patt"
+        smoothCount="0"
+        smoothTolerance="0.0001"
+      >
+        <a-plane
+          src="#lu-video"
+          width="10"
+          height="10"
+          position="0 0.01 0"
+          rotation="-90 0 0"
+          material="transparent: true; side: double; alphaTest: 0.001;"
+        ></a-plane>
+      </a-marker>
+
+      <!-- TIGRE -->
+      <a-assets id="Tigre">
+        <video
+          id="tigre-video"
+          src="./tigre_video.webm"
+          autoplay
+          loop
+          playsinline
+          crossorigin="anonymous"
+        ></video>
+      </a-assets>
+      <a-marker
+        type="pattern"
+        url="./astronaut.patt"
+        smoothCount="0"
+        smoothTolerance="0.0001"
+      >
+        <a-plane
+          src="#tigre-video"
+          width="10"
+          height="10"
+          position="0 0.01 0"
+          rotation="-90 0 0"
+          material="transparent: true; side: double; alphaTest: 0.001;"
+        ></a-plane>
+      </a-marker>
+
+      <!-- QUAN -->
+      <a-assets id="Quan">
+        <video
+          id="quan-video"
+          src="./quan_video.webm"
+          autoplay
+          loop
+          playsinline
+          crossorigin="anonymous"
+        ></video>
+      </a-assets>
+      <a-marker
+        type="pattern"
+        url="./pattern-BO.patt"
+        smoothCount="0"
+        smoothTolerance="0.0001"
+      >
+        <a-plane
+          src="#quan-video"
+          width="10"
+          height="10"
+          position="0 0.01 0"
+          rotation="-90 0 0"
+          material="transparent: true; side: double; alphaTest: 0.001;"
+        ></a-plane>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+    <div id="controls">
+      <button id="open_tutorial" class="wrapper">Tutorial</button>
+
+      <button id="settings">Settings</button>
+      <div class="backdrop" id="backdrop">
+        <div class="dialog">
+          <h2>Tutorial</h2>
+          <ul>
+            <li>istruzioni</li>
+            <li>istruzioni</li>
+            <li>istruzioni</li>
+          </ul>
+          <button id="close" style="margin-top: 14px">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scene = document.querySelector("a-scene");
+        const videos = document.querySelectorAll("video");
+        const markers = document.querySelectorAll("a-marker");
+
+        scene.addEventListener("loaded", () => {
+          videos.forEach((v) => v.pause());
+        });
+
+        markers.forEach((marker) => {
+          const video = document.querySelector(
+            marker.querySelector("a-plane").getAttribute("src")
+          );
+
+          marker.addEventListener("markerFound", () => {
+            videos.forEach((v) => v.pause());
+            if (video.paused) video.play();
+            console.log("marker found, playing: ", video);
+          });
+
+          marker.addEventListener("markerLost", () => {
+            if (video && !video.paused) video.pause();
+          });
+        });
+
+        // ✔️ Buttons
+        document.getElementById("tutorial").onclick = () => {};
+
+        document.getElementById("settings").onclick = () => {};
+      });
+
+      const changeLanguageBtn = document.getElementById("change-len-btn");
+      let language = "ITA";
+
+      changeLanguageBtn.addEventListener("click", () => {
+        if (language == "ENG") {
+          changeLanguageBtn.innerHTML = "ENG";
+          language = "ITA";
+        } else {
+          changeLanguageBtn.innerHTML = "ITA";
+          language = "ENG";
+        }
+      });
+
+      function enterFullscreen(element = document.documentElement) {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+          // Safari
+          element.webkitRequestFullscreen();
+        }
+      }
+
+      function exitFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          // Safari
+          document.webkitExitFullscreen();
+        }
+      }
+      const fullscreenBtn = document.getElementById("clean-fullscreen-btn");
+      let isClean = false;
+
+      fullscreenBtn.addEventListener("click", () => {
+        isClean = !isClean;
+
+        const elementsToHide = [
+          document.getElementById("controls"),
+          document.getElementById("loading"),
+          changeLanguageBtn,
+        ];
+
+        if (isClean) {
+          // hide UI but keep this button visible
+          elementsToHide.forEach((el) => el && el.classList.add("hidden-ui"));
+          fullscreenBtn.textContent = "✕"; // exit icon
+          enterFullscreen()
+        } else {
+          // restore UI
+          elementsToHide.forEach(
+            (el) => el && el.classList.remove("hidden-ui")
+          );
+          fullscreenBtn.textContent = "⛶"; // enter fullscreen icon
+          enterFullscreen()
+        }
+      });
+
+      const openBtn = document.getElementById("open_tutorial");
+      const closeBtn = document.getElementById("close");
+      const backdrop = document.getElementById("backdrop");
+
+      openBtn.onclick = () => (backdrop.style.display = "flex");
+      closeBtn.onclick = () => (backdrop.style.display = "none");
+
+      backdrop.onclick = (e) => {
+        if (e.target === backdrop) backdrop.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

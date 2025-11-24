@@ -1,0 +1,107 @@
+#controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#controls button {
+  flex: 1;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000;
+  font-weight: bold;
+}
+
+#controls button:active {
+  background: #d0d0d0;
+}
+
+#clean-fullscreen-btn {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* stays above everything */
+  cursor: pointer;
+}
+
+#clean-fullscreen-btn:active {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Used to hide UI */
+.hidden-ui {
+  display: none !important;
+}
+
+#change-len-btn {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* stays above everything */
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dialog h2 {
+  margin-top: 0;
+}
+
+#controls button {
+  color: whitesmoke;
+  padding: 10px 16px;
+  border: 1px solid #bbb;
+  background: #0171bb;
+  border-radius: 6px;
+  cursor: pointer;
+}
