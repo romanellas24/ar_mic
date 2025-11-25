@@ -5,6 +5,10 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="style.css" />
+
+    <script src="js/marker-video-controller.js" defer></script>
+    <script src="js/ui-controls.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
 
   <!-- Floating Clean-Fullscreen Button -->
@@ -31,7 +35,6 @@
           crossorigin="anonymous"
         ></video>
       </a-assets>
-
       <a-marker
         type="pattern"
         url="./drago/pattern-drago.patt"
@@ -56,6 +59,7 @@
           autoplay
           loop
           playsinline
+          preload="none"
           crossorigin="anonymous"
         ></video>
       </a-assets>
@@ -79,16 +83,17 @@
       <a-assets id="Lu">
         <video
           id="lu-video"
-          src="./lu_video.webm"
+          src="./lu/lu_ITA.webm"
           autoplay
           loop
           playsinline
+          preload="none"
           crossorigin="anonymous"
         ></video>
       </a-assets>
       <a-marker
         type="pattern"
-        url="./pattern-drago.patt"
+        url="./lu/pattern-lu.patt"
         smoothCount="0"
         smoothTolerance="0.0001"
       >
@@ -106,16 +111,17 @@
       <a-assets id="Tigre">
         <video
           id="tigre-video"
-          src="./tigre_video.webm"
+          src="./tiger/tigre_ITA.webm"
           autoplay
           loop
           playsinline
+          preload="none"
           crossorigin="anonymous"
         ></video>
       </a-assets>
       <a-marker
         type="pattern"
-        url="./astronaut.patt"
+        url="./tiger/pattern-tigre.patt"
         smoothCount="0"
         smoothTolerance="0.0001"
       >
@@ -129,25 +135,26 @@
         ></a-plane>
       </a-marker>
 
-      <!-- QUAN -->
-      <a-assets id="Quan">
+      <!-- ZHO -->
+      <a-assets id="zho">
         <video
-          id="quan-video"
-          src="./quan_video.webm"
+          id="zho-video"
+          src="./zho/zho_ITA.webm"
           autoplay
           loop
           playsinline
+          preload="none"
           crossorigin="anonymous"
         ></video>
       </a-assets>
       <a-marker
         type="pattern"
-        url="./pattern-BO.patt"
+        url="./zho/pattern-zho.patt"
         smoothCount="0"
         smoothTolerance="0.0001"
       >
         <a-plane
-          src="#quan-video"
+          src="#zho-video"
           width="10"
           height="10"
           position="0 0.01 0"
@@ -175,106 +182,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const scene = document.querySelector("a-scene");
-        const videos = document.querySelectorAll("video");
-        const markers = document.querySelectorAll("a-marker");
-
-        scene.addEventListener("loaded", () => {
-          videos.forEach((v) => v.pause());
-        });
-
-        markers.forEach((marker) => {
-          const video = document.querySelector(
-            marker.querySelector("a-plane").getAttribute("src")
-          );
-
-          marker.addEventListener("markerFound", () => {
-            videos.forEach((v) => v.pause());
-            if (video.paused) video.play();
-            console.log("marker found, playing: ", video);
-          });
-
-          marker.addEventListener("markerLost", () => {
-            if (video && !video.paused) video.pause();
-          });
-        });
-
-        // ✔️ Buttons
-        document.getElementById("tutorial").onclick = () => {};
-
-        document.getElementById("settings").onclick = () => {};
-      });
-
-      const changeLanguageBtn = document.getElementById("change-len-btn");
-      let language = "ITA";
-
-      changeLanguageBtn.addEventListener("click", () => {
-        if (language == "ENG") {
-          changeLanguageBtn.innerHTML = "ENG";
-          language = "ITA";
-        } else {
-          changeLanguageBtn.innerHTML = "ITA";
-          language = "ENG";
-        }
-      });
-
-      function enterFullscreen(element = document.documentElement) {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if (element.webkitRequestFullscreen) {
-          // Safari
-          element.webkitRequestFullscreen();
-        }
-      }
-
-      function exitFullscreen() {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          // Safari
-          document.webkitExitFullscreen();
-        }
-      }
-      const fullscreenBtn = document.getElementById("clean-fullscreen-btn");
-      let isClean = false;
-
-      fullscreenBtn.addEventListener("click", () => {
-        isClean = !isClean;
-
-        const elementsToHide = [
-          document.getElementById("controls"),
-          document.getElementById("loading"),
-          changeLanguageBtn,
-        ];
-
-        if (isClean) {
-          // hide UI but keep this button visible
-          elementsToHide.forEach((el) => el && el.classList.add("hidden-ui"));
-          fullscreenBtn.textContent = "✕"; // exit icon
-          enterFullscreen()
-        } else {
-          // restore UI
-          elementsToHide.forEach(
-            (el) => el && el.classList.remove("hidden-ui")
-          );
-          fullscreenBtn.textContent = "⛶"; // enter fullscreen icon
-          enterFullscreen()
-        }
-      });
-
-      const openBtn = document.getElementById("open_tutorial");
-      const closeBtn = document.getElementById("close");
-      const backdrop = document.getElementById("backdrop");
-
-      openBtn.onclick = () => (backdrop.style.display = "flex");
-      closeBtn.onclick = () => (backdrop.style.display = "none");
-
-      backdrop.onclick = (e) => {
-        if (e.target === backdrop) backdrop.style.display = "none";
-      };
-    </script>
   </body>
 </html>
