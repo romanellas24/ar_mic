@@ -5,15 +5,13 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="style.css" />
-
     <script src="js/marker-video-controller.js" defer></script>
     <script src="js/ui-controls.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
 
-  <!-- Floating Clean-Fullscreen Button -->
+  <!--UI Buttons -->
   <button id="clean-fullscreen-btn">⛶</button>
-
   <button id="change-len-btn">ENG</button>
 
   <body style="margin: 0; overflow: hidden">
@@ -28,12 +26,25 @@
       <a-assets id="drago_container">
         <video
           id="drago-video"
-          src="./drago/drago_ITA.webm"
+          src="./drago/drago.webm"
           autoplay
           loop
           playsinline
+          muted
           crossorigin="anonymous"
         ></video>
+        <audio
+          id="drago_audio_ita"
+          class="audio_ita"
+          src="./drago/drago_ITA.mp3"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="drago_audio_eng"
+          class="audio_eng"
+          src="./drago/drago_ENG.mp3"
+          crossorigin="anonymous"
+        ></audio>
       </a-assets>
       <a-marker
         type="pattern"
@@ -55,13 +66,26 @@
       <a-assets id="bod_container">
         <video
           id="bod-video"
-          src="./bod/bod_ITA.webm"
+          src="./bod/bod.webm"
           autoplay
           loop
           playsinline
           preload="none"
+          muted
           crossorigin="anonymous"
         ></video>
+        <audio
+          id="bod_audio_ita"
+          class="audio_ita"
+          src="./bod/bod_ITA.mp3"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="bod_audio_eng"
+          class="audio_eng"
+          src="./bod/bod_ENG.mp3"
+          crossorigin="anonymous"
+        ></audio>
       </a-assets>
       <a-marker
         type="pattern"
@@ -83,13 +107,25 @@
       <a-assets id="Lu">
         <video
           id="lu-video"
-          src="./lu/lu_ITA.webm"
+          src="./lu/lu.webm"
           autoplay
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
         ></video>
+        <audio
+          id="lu_audio_ita"
+          class="audio_ita"
+          src="./lu/lu_ITA.mp3"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="lu_audio_eng"
+          class="audio_eng"
+          src="./lu/lu_ENG.mp3"
+          crossorigin="anonymous"
+        ></audio>
       </a-assets>
       <a-marker
         type="pattern"
@@ -111,13 +147,25 @@
       <a-assets id="Tigre">
         <video
           id="tigre-video"
-          src="./tiger/tigre_ITA.webm"
+          src="./tiger/tigre.webm"
           autoplay
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
         ></video>
+        <audio
+          id="tigre_audio_ita"
+          class="audio_ita"
+          src="./tiger/tigre_ITA.mp3"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="tigre_audio_eng"
+          class="audio_eng"
+          src="./tiger/tigre_ENG.mp3"
+          crossorigin="anonymous"
+        ></audio>
       </a-assets>
       <a-marker
         type="pattern"
@@ -139,13 +187,25 @@
       <a-assets id="zho">
         <video
           id="zho-video"
-          src="./zho/zho_ITA.webm"
+          src="./zho/zho.webm"
           autoplay
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
         ></video>
+        <audio
+          id="zho_audio_ita"
+          class="audio_ita"
+          src="./zho/zho_ITA.mp3"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="zho_audio_eng"
+          class="audio_eng"
+          src="./zho/zho_ENG.mp3"
+          crossorigin="anonymous"
+        ></audio>
       </a-assets>
       <a-marker
         type="pattern"

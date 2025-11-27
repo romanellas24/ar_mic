@@ -3,19 +3,24 @@
   window.UIControls = {
     init: function () {
       const changeLanguageBtn = document.getElementById("change-len-btn");
+      const openBtn = document.getElementById("open_tutorial");
+      const closeBtn = document.getElementById("close");
+      const backdrop = document.getElementById("backdrop");
+      const fullscreenBtn = document.getElementById("clean-fullscreen-btn");
       let language = "ITA";
+      let isClean = false;
 
       if (changeLanguageBtn) {
         changeLanguageBtn.addEventListener("click", () => {
-          if (language == "ENG") {
-            changeLanguageBtn.innerHTML = "ENG";
-            language = "ITA";
-          } else {
-            changeLanguageBtn.innerHTML = "ITA";
-            language = "ENG";
-          }
+            changeLanguageBtn.innerHTML = language;
+            language = language == "ENG" ? "ITA" : "ENG"
         });
       }
+
+      function getCurrentAudio(){
+        return language;
+      }
+       
 
       function enterFullscreen(element = document.documentElement) {
         if (element.requestFullscreen) {
@@ -33,9 +38,6 @@
         }
       }
 
-      const fullscreenBtn = document.getElementById("clean-fullscreen-btn");
-      let isClean = false;
-
       if (fullscreenBtn) {
         fullscreenBtn.addEventListener("click", () => {
           isClean = !isClean;
@@ -51,19 +53,19 @@
             fullscreenBtn.textContent = "✕"; // exit icon
             enterFullscreen();
           } else {
-            elementsToHide.forEach((el) => el && el.classList.remove("hidden-ui"));
+            elementsToHide.forEach(
+              (el) => el && el.classList.remove("hidden-ui")
+            );
             fullscreenBtn.textContent = "⛶"; // enter fullscreen icon
-            enterFullscreen();
+            exitFullscreen();
           }
         });
       }
 
-      const openBtn = document.getElementById("open_tutorial");
-      const closeBtn = document.getElementById("close");
-      const backdrop = document.getElementById("backdrop");
-
-      if (openBtn && backdrop) openBtn.onclick = () => (backdrop.style.display = "flex");
-      if (closeBtn && backdrop) closeBtn.onclick = () => (backdrop.style.display = "none");
+      if (openBtn && backdrop)
+        openBtn.onclick = () => (backdrop.style.display = "flex");
+      if (closeBtn && backdrop)
+        closeBtn.onclick = () => (backdrop.style.display = "none");
 
       if (backdrop)
         backdrop.onclick = (e) => {

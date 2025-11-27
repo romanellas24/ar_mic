@@ -1,3 +1,4 @@
 *.webm
 *.mov
+*.mp3
 node_modules
