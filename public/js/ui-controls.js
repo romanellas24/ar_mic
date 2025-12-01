@@ -1,4 +1,3 @@
-/* UI controls served from public/js */
 (function (window) {
   window.UIControls = {
     init: function () {
@@ -7,7 +6,7 @@
       const closeBtn = document.getElementById("close");
       const backdrop = document.getElementById("backdrop");
       const fullscreenBtn = document.getElementById("clean-fullscreen-btn");
-      let language = "ITA"; // the current one, not the one showed on the button
+      let language = "ITA"; // the current one, not the one showed on the button :\
       let isClean = false;
 
       if (changeLanguageBtn) {
