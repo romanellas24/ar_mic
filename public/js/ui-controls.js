@@ -62,13 +62,13 @@
 
           if (isClean) {
             elementsToHide.forEach((el) => el && el.classList.add("hidden-ui"));
-            fullscreenBtn.textContent = "✕"; // exit icon
+            fullscreenBtn.textContent = "✕";
             enterFullscreen();
           } else {
             elementsToHide.forEach(
               (el) => el && el.classList.remove("hidden-ui")
             );
-            fullscreenBtn.textContent = "⛶"; // enter fullscreen icon
+            fullscreenBtn.textContent = "⛶";
             exitFullscreen();
           }
         });
