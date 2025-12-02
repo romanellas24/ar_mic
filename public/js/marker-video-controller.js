@@ -2,7 +2,6 @@
   window.MarkerVideoController = {
     init: function () {
       const scene = document.querySelector("a-scene");
-      // Only manage the asset videos we control (avoid pausing the AR.js camera video)
       const assetVideos = document.querySelectorAll('video[id$="-video-ita"], video[id$="-video-eng"]');
       const markers = document.querySelectorAll("a-marker");
       let currentLanguage = "ITA";
@@ -54,7 +53,7 @@
 
       markers.forEach((marker) => {
         const plane = marker.querySelector('a-plane'); //get the plane
-        const planeSrc = plane.getAttribute('src') || ''; //get 
+        const planeSrc = plane.getAttribute('src') || ''; 
         const base = planeSrc.replace('#', '').replace('-video-ita', '').replace('-video-eng', ''); //get the base name of the video (like drago)
         const idITA = base + '-video-ita';
         const idENG = base + '-video-eng';
@@ -65,10 +64,8 @@
 
         marker.addEventListener('markerFound', () => {
           
-          // Pause only asset videos (leave camera/video element alone)
           document.querySelectorAll('video[id$="-video-ita"], video[id$="-video-eng"]').forEach((v) => v.pause());
 
-          // Re-evaluate which video should be active
           activeVideo = currentLanguage === 'ITA' ? videoITA : videoENG;
           const other = activeVideo === videoITA ? videoENG : videoITA;
 
@@ -91,7 +88,6 @@
         });
 
         marker.addEventListener('markerLost', () => {
-          // Pause both videos for this marker
           if (videoITA && !videoITA.paused) videoITA.pause();
           if (videoENG && !videoENG.paused) videoENG.pause();
         });
