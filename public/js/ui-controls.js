@@ -15,7 +15,7 @@
       const textIT = [
         "Alzare il volume del telefono e acconsentire all'accesso della webcam.",
         "Inquadrare gli ideogrammi presenti nelle vetrine e rimanere fermi.",
-        "Puoi cambiare la lingua tramite il pulsante in alto a sinistra",
+        "Puoi cambiare la lingua tramite il pulsante in alto a sinistra.",
       ];
       // Testi in inglese
       const textEN = [
