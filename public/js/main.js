@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isIOS) {
     const warning = document.createElement("div");
     warning.textContent =
-      "Esperienza iOS non ancora supportata: ci stiamo lavorando.";
+      "Esperienza iOS non ancora supportata: ci stiamo lavorando.\n iOS experience is not yet supported, we are working on it";
     warning.setAttribute(
       "style",
       [
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "text-align:center",
         "padding:24px",
         "z-index:999999",
+        "font-size:large"
       ].join(";")
     );
     document.body.appendChild(warning);
