@@ -1,3 +1,7 @@
 *.mov
 *.mp4
+*.srt
 node_modules
+example
+/public/js/aframe-chromakey-material-master/dist
+converter.py

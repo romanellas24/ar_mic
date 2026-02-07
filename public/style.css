@@ -11,7 +11,6 @@
   z-index: 9999;
   justify-content: center;
   align-items: center;
-  
 }
 
 #controls button {
@@ -23,14 +22,17 @@
   color: #fff;
   font-weight: 600;
   box-shadow: 0 6px 18px rgba(1, 35, 63, 0.25);
-  transition: transform 150ms ease, box-shadow 150ms ease, opacity 150ms ease;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    opacity 150ms ease;
 
   flex: 0 1 auto;
 }
 
 #controls button:active {
-  transform: translateY(1px) scale(0.995);
   box-shadow: 0 4px 12px rgba(1, 35, 63, 0.18);
+  background: linear-gradient(180deg, #0b7baf 0%, #015a94 100%);
 }
 
 #clean-fullscreen-btn {
@@ -41,7 +43,7 @@
   height: 52px;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
   backdrop-filter: blur(6px);
   color: #fff;
   font-size: 24px;
@@ -69,7 +71,7 @@
   height: 52px;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
   backdrop-filter: blur(6px);
   color: #fff;
   font-size: 16px;
@@ -107,11 +109,14 @@
 
 /* small responsive tweaks */
 #controls button:hover {
-  transform: translateY(-3px);
   opacity: 0.98;
 }
 
-.dialog p, .dialog ul { color: #08314b; line-height: 1.45; }
+.dialog p,
+.dialog ul {
+  color: #08314b;
+  line-height: 1.45;
+}
 
 .dialog li {
   margin: 5px;
@@ -119,7 +124,7 @@
 
 .subtitle-container {
   position: fixed;
-  bottom: 10%; 
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -129,19 +134,29 @@
   text-shadow: 0px 0px 4px black;
   font-family: sans-serif;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for readability */
   padding: 10px;
   border-radius: 8px;
   pointer-events: none; /* Let clicks pass through to the AR scene */
   z-index: 999;
   min-height: 24px;
   display: none; /* Hidden by default until toggled */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Importante: così puoi cliccare attraverso i sottotitoli */
 }
 
 .subtitle-container.visible {
   display: block;
 }
 
+.subtitle-container:empty {
+  display: none;
+}
 
 /* put in public/style.css (or the CSS file you load) */
 #controls button svg {
@@ -154,7 +169,12 @@
 }
 
 /* ensure path doesn't override size */
-#controls button svg path { vector-effect: non-scaling-stroke; }
+#controls button svg path {
+  vector-effect: non-scaling-stroke;
+}
 
 /* ensure buttons center their content */
-#controls button { justify-content: center; gap: 8px; }
+#controls button {
+  justify-content: center;
+  gap: 8px;
+}

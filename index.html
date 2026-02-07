@@ -2,21 +2,32 @@
 <html>
   <head>
     <title>AR mic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <script src="https://unpkg.com/aframe-chromakey-material/dist/aframe-chromakey-material.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> 
+    <script src="js/aframe-chromakey-material-master/index.js"></script> 
     <link rel="stylesheet" href="style.css" />
     <script src="js/marker-video-controller.js" defer></script>
     <script src="js/ui-controls.js" defer></script>
-    <script src="js/subtitle-controller.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
 
   <!--UI Buttons -->
-  <button id="clean-fullscreen-btn">&#9974</button>
+  <button id="clean-fullscreen-btn">
+    <svg id="fullscreen-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+    </svg>
+  </button>
   <button id="change-len-btn">ENG</button>
 
   <body style="margin: 0; overflow: hidden">
+    <!-- LOADING OVERLAY -->
+    <div id="loading-overlay">
+      <div class="spinner"></div>
+      <p>Caricamento...</p>
+    </div>
+
     <!-- AR SCENE -->
     <a-scene
       vr-mode-ui="enabled: false"
@@ -28,20 +39,22 @@
       <a-assets id="drago">
         <video
           id="drago-video-ita"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/drago/drago_ITA.webm"
+          src="/media/drago/drago_ITA.webm"
           loop
           playsinline
           preload="metadata"
           crossorigin="anonymous"
+          webkit-playsinline
         >
         </video>
         <video
           id="drago-video-eng"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/drago/drago_ENG.webm"
+          src="/media/drago/drago_ENG.webm"
           loop
           playsinline
           preload="metadata"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
       </a-assets>
       <a-marker
@@ -53,11 +66,11 @@
       >
         <a-plane
           src="#drago-video-ita"
-          width="9"
-          height="9"
+          width="4"
+          height="4"
           position="0 0.01 0"
           rotation="-90 0 0"
-          material="transparent: true; "
+          material="transparent: true;"
         ></a-plane>
       </a-marker>
 
@@ -65,19 +78,21 @@
       <a-assets id="bod">
         <video
           id="bod-video-ita"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/bod/bod_ITA.webm"
+          src="/media/bod/bod_ITA.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
         <video
           id="bod-video-eng"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/bod/bod_ENG.webm"
+          src="/media/bod/bod_ENG.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
       </a-assets>
       <a-marker
@@ -89,11 +104,11 @@
       >
         <a-plane
           src="#bod-video-ita"
-          width="9"
-          height="9"
+          width="4"
+          height="4"
           position="0 0.01 0"
           rotation="-90 0 0"
-          material="transparent: true; "
+          material="transparent: true;"
         ></a-plane>
       </a-marker>
 
@@ -101,19 +116,21 @@
       <a-assets id="lu">
         <video
           id="lu-video-ita"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/lu/lu_ITA.webm"
+          src="/media/lu/lu_ITA.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
         <video
           id="lu-video-eng"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/lu/lu_ENG.webm"
+          src="/media/lu/lu_ENG.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
       </a-assets>
       <a-marker
@@ -125,11 +142,11 @@
       >
         <a-plane
           src="#lu-video-ita"
-          width="9"
-          height="9"
+          width="4"
+          height="4"
           position="0 0.01 0"
           rotation="-90 0 0"
-          material="transparent: true; "
+          material="transparent: true;"
         ></a-plane>
       </a-marker>
 
@@ -137,19 +154,21 @@
       <a-assets id="tigre">
         <video
           id="tigre-video-ita"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/tiger/tigre_ITA.webm"
+          src="/media/tiger/tigre_ITA.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
         <video
           id="tigre-video-eng"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/tiger/tigre_ENG.webm"
+          src="/media/tiger/tigre_ENG.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
       </a-assets>
       <a-marker
@@ -161,11 +180,11 @@
       >
         <a-plane
           src="#tigre-video-ita"
-          width="9"
-          height="9"
+          width="4"
+          height="4"
           position="0 0.01 0"
           rotation="-90 0 0"
-          material="transparent: true; "
+          material="transparent: true;"
         ></a-plane>
       </a-marker>
 
@@ -173,19 +192,21 @@
       <a-assets id="zho">
         <video
           id="zho-video-ita"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/zho/zho_ITA.webm"
+          src="/media/zho/zho_ITA.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
         <video
           id="zho-video-eng"
-          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/zho/zho_ENG.webm"
+          src="/media/zho/zho_ENG.webm"
           loop
           playsinline
           preload="none"
           crossorigin="anonymous"
+          webkit-playsinline
         ></video>
       </a-assets>
       <a-marker
@@ -197,11 +218,11 @@
       >
         <a-plane
           src="#zho-video-ita"
-          width="9"
-          height="9"
+          width="4"
+          height="4"
           position="0 0.01 0"
           rotation="-90 0 0"
-          material="transparent: true; "
+          material="transparent: true;"
         ></a-plane>
       </a-marker>
 
@@ -211,12 +232,15 @@
     <div id="controls">
       <button id="open_tutorial" class="wrapper">
         <span>Tutorial</span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <!-- Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
-           <path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/></svg>
       </button>
 
-      <div id="subtitle-overlay" class="subtitle-container hidden-ui"></div>
+      <button id="unmute-btn">
+        <span>Attiva Audio</span>
+      </button>
+
+      <button id="sub-btn">
+        <span>CC</span>
+      </button>
 
       <div class="backdrop" id="backdrop">
         <div class="dialog">
@@ -234,5 +258,7 @@
         </div>
       </div>
     </div>
+
+    <div id="subtitle-overlay" class="subtitle-container"></div>
   </body>
 </html>
