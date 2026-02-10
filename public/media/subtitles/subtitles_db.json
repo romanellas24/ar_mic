@@ -1,0 +1,1327 @@
+{
+    "bod-video-eng": [
+        {
+            "start": 1.458,
+            "end": 2.875,
+            "text": "Want some tea?"
+        },
+        {
+            "start": 2.875,
+            "end": 5.125,
+            "text": "The peach-shaped teapot in this display case"
+        },
+        {
+            "start": 5.125,
+            "end": 7.25,
+            "text": "is just the thing for serving it."
+        },
+        {
+            "start": 7.25,
+            "end": 9.25,
+            "text": "It was made during the reign"
+        },
+        {
+            "start": 9.25,
+            "end": 13.166,
+            "text": "of the emperor Kangxi, from 1662 to 1722,"
+        },
+        {
+            "start": 13.458,
+            "end": 16.166,
+            "text": "the very same period in which I was created"
+        },
+        {
+            "start": 16.166,
+            "end": 18.125,
+            "text": "in the city of Jingdezhen,"
+        },
+        {
+            "start": 18.125,
+            "end": 20.333,
+            "text": "the porcelain capital of China."
+        },
+        {
+            "start": 20.708,
+            "end": 22.5,
+            "text": "Do you know how to fill this teapot?"
+        },
+        {
+            "start": 22.791,
+            "end": 26.625,
+            "text": "There’s no opening on the top, quite puzzling, isn’t it?"
+        },
+        {
+            "start": 26.625,
+            "end": 29.791,
+            "text": "To discover its secret, you must turn it upside down."
+        },
+        {
+            "start": 30.166,
+            "end": 33.5,
+            "text": "There you’ll find the opening used to pour in the tea."
+        },
+        {
+            "start": 33.791,
+            "end": 37.416,
+            "text": "These ingenious teapots became fashionable in China"
+        },
+        {
+            "start": 37.416,
+            "end": 39.25,
+            "text": "from the late Ming dynasty onward,"
+        },
+        {
+            "start": 39.458,
+            "end": 41.333,
+            "text": "around the seventeenth century."
+        },
+        {
+            "start": 41.708,
+            "end": 44.833,
+            "text": "Now, notice its shape: the peach."
+        },
+        {
+            "start": 45.166,
+            "end": 47.25,
+            "text": "This fruit is one of the most auspicious"
+        },
+        {
+            "start": 47.25,
+            "end": 49.291,
+            "text": "symbols in Chinese culture."
+        },
+        {
+            "start": 49.291,
+            "end": 51.958,
+            "text": "Legend tells that in the garden"
+        },
+        {
+            "start": 51.958,
+            "end": 53.5,
+            "text": "of the Queen Mother of the West,"
+        },
+        {
+            "start": 53.666,
+            "end": 56.083,
+            "text": "a divine tree bears peaches that grant"
+        },
+        {
+            "start": 56.083,
+            "end": 58.166,
+            "text": "immortality to those who eat them."
+        },
+        {
+            "start": 58.5,
+            "end": 61.458,
+            "text": "Chinese art is filled with symbols of the"
+        },
+        {
+            "start": 61.458,
+            "end": 63.333,
+            "text": "eternal quest for immortality."
+        },
+        {
+            "start": 63.625,
+            "end": 67.583,
+            "text": "Just look at the object I hold in my hand, a - ruyi scepter,"
+        },
+        {
+            "start": 67.958,
+            "end": 71.0,
+            "text": "another emblem of longevity and good fortune."
+        },
+        {
+            "start": 71.458,
+            "end": 73.583,
+            "text": "And on the teapot itself, you can see"
+        },
+        {
+            "start": 73.583,
+            "end": 75.666,
+            "text": "yet another sign of immortality:"
+        },
+        {
+            "start": 76.0,
+            "end": 76.958,
+            "text": "the crane bird,"
+        },
+        {
+            "start": 77.125,
+            "end": 80.958,
+            "text": "who according to legend is said to live 1000 years."
+        }
+    ],
+    "bod-video-ita": [
+        {
+            "start": 1.458,
+            "end": 2.875,
+            "text": "Gradisci un po’ di tè?"
+        },
+        {
+            "start": 2.875,
+            "end": 5.458,
+            "text": "La teiera a forma di pesca in questa vetrina"
+        },
+        {
+            "start": 5.458,
+            "end": 8.25,
+            "text": "è proprio quello che ci vuole per servirlo."
+        },
+        {
+            "start": 8.25,
+            "end": 9.166,
+            "text": "È stata realizzata"
+        },
+        {
+            "start": 9.166,
+            "end": 11.375,
+            "text": "durante il regno dell'imperatore Kangxi"
+        },
+        {
+            "start": 12.0,
+            "end": 17.666,
+            "text": "dal 1762 al 1722, lo stesso periodo in cui anche io"
+        },
+        {
+            "start": 17.666,
+            "end": 20.208,
+            "text": "sono stata creata nella città di Jingdezhen,"
+        },
+        {
+            "start": 20.208,
+            "end": 22.583,
+            "text": "la capitale cinese della porcellana."
+        },
+        {
+            "start": 23.333,
+            "end": 25.833,
+            "text": "Sai come riempire questa teiera?"
+        },
+        {
+            "start": 25.833,
+            "end": 28.583,
+            "text": "Non c'è alcuna apertura sulla parte superiore."
+        },
+        {
+            "start": 28.583,
+            "end": 31.0,
+            "text": "Piuttosto sconcertante, vero?"
+        },
+        {
+            "start": 31.0,
+            "end": 34.416,
+            "text": "Per scoprirne il segreto, devi capovolgerla."
+        },
+        {
+            "start": 34.75,
+            "end": 38.458,
+            "text": "Sul fondo troverai l'apertura utilizzata per versare il tè."
+        },
+        {
+            "start": 38.666,
+            "end": 41.708,
+            "text": "Questa ingegnose teiere divennero di moda in Cina"
+        },
+        {
+            "start": 41.708,
+            "end": 43.916,
+            "text": "dalla fine della dinastia Ming in poi"
+        },
+        {
+            "start": 44.208,
+            "end": 46.291,
+            "text": "Intorno al XVII secolo."
+        },
+        {
+            "start": 46.708,
+            "end": 49.291,
+            "text": "Ora notate la sua forma di pesca."
+        },
+        {
+            "start": 49.291,
+            "end": 52.416,
+            "text": "Questo frutto per i cinesi è un simbolo di buon auspicio."
+        },
+        {
+            "start": 53.041,
+            "end": 55.083,
+            "text": "La leggenda narra che nel giardino"
+        },
+        {
+            "start": 55.083,
+            "end": 58.166,
+            "text": "della regina Madre dell'Ovest un albero divino"
+        },
+        {
+            "start": 58.166,
+            "end": 59.5,
+            "text": "produca pesche che"
+        },
+        {
+            "start": 59.5,
+            "end": 61.875,
+            "text": "garantiscono l'immortalità a chi le mangia."
+        },
+        {
+            "start": 62.375,
+            "end": 64.458,
+            "text": "L'arte cinese è ricca di simboli"
+        },
+        {
+            "start": 64.458,
+            "end": 67.583,
+            "text": "che rappresentano l'eterna ricerca dell'immortalità."
+        },
+        {
+            "start": 68.125,
+            "end": 70.166,
+            "text": "Basta guardare l'oggetto che tengo in mano"
+        },
+        {
+            "start": 70.166,
+            "end": 71.916,
+            "text": "uno scettro ruyi,"
+        },
+        {
+            "start": 72.416,
+            "end": 75.416,
+            "text": "un altro emblema di longevità e buona fortuna."
+        },
+        {
+            "start": 75.75,
+            "end": 77.125,
+            "text": "E sulla teiera stessa"
+        },
+        {
+            "start": 77.125,
+            "end": 79.291,
+            "text": "si può vedere un altro segno di immortalità:"
+        },
+        {
+            "start": 79.583,
+            "end": 82.791,
+            "text": "la gru, che secondo la leggenda vive 1000 anni."
+        }
+    ],
+    "drago-video-eng": [
+        {
+            "start": 3.166,
+            "end": 9.75,
+            "text": "Look at the fantastic birds painted on the plate in the display case, with their long feathered tails,"
+        },
+        {
+            "start": 10.208,
+            "end": 12.125,
+            "text": "aren't they magnificent?"
+        },
+        {
+            "start": 12.375,
+            "end": 15.333,
+            "text": "In Japanese art, they are known as ‘hoo’"
+        },
+        {
+            "start": 15.333,
+            "end": 17.875,
+            "text": "often translated as phoenix."
+        },
+        {
+            "start": 18.083,
+            "end": 23.791,
+            "text": "This mythical bird comes from China, where it is often shown together with me - the dragon"
+        },
+        {
+            "start": 24.083,
+            "end": 27.083,
+            "text": "symbolising the empress and the emperor."
+        },
+        {
+            "start": 27.25,
+            "end": 32.125,
+            "text": "The bird was seen as a sign of good fortune and was said only to descend from heaven"
+        },
+        {
+            "start": 32.125,
+            "end": 34.75,
+            "text": "when the empire was ruled with virtue."
+        },
+        {
+            "start": 35.5,
+            "end": 37.541,
+            "text": "These beliefs later spread to Japan."
+        },
+        {
+            "start": 38.291,
+            "end": 45.0,
+            "text": "The use of the phoenix in Japanese art dates back to the Asuka period, around the 6th to 7th century."
+        },
+        {
+            "start": 45.75,
+            "end": 51.333,
+            "text": "On the dish you see here, the birds are shown among flowers and leaves from the paulownia tree"
+        },
+        {
+            "start": 51.75,
+            "end": 54.458,
+            "text": "said to be the tree where the phoenix lived."
+        },
+        {
+            "start": 54.791,
+            "end": 60.041,
+            "text": "Together, they may symbolize marital harmony, making this a fitting wedding gift."
+        },
+        {
+            "start": 60.583,
+            "end": 65.541,
+            "text": "To create this design, the artist painted the blue areas with cobalt pigment."
+        },
+        {
+            "start": 65.791,
+            "end": 71.958,
+            "text": "The piece was then glazed and fired, before adding the red, green, and purple colours."
+        },
+        {
+            "start": 72.25,
+            "end": 75.166,
+            "text": "A second firing completed the decoration."
+        }
+    ],
+    "drago-video-ita": [
+        {
+            "start": 3.166,
+            "end": 8.833,
+            "text": "Guardate gli uccelli fantastici del piatto in esposizione con le loro lunghe code piumate,"
+        },
+        {
+            "start": 9.125,
+            "end": 11.041,
+            "text": "non sono magnifici?"
+        },
+        {
+            "start": 11.041,
+            "end": 15.541,
+            "text": "Si tratta di fenici, nell'arte giapponese sono conosciute come “hoo”"
+        },
+        {
+            "start": 16.416,
+            "end": 19.416,
+            "text": "Questo uccello mitologico proviene dalla Cina,"
+        },
+        {
+            "start": 19.666,
+            "end": 22.833,
+            "text": "dove è spesso raffigurato insieme a me, il drago,"
+        },
+        {
+            "start": 23.166,
+            "end": 26.166,
+            "text": "a simboleggiare l'imperatrice e l'imperatore."
+        },
+        {
+            "start": 26.5,
+            "end": 29.625,
+            "text": "L'uccello era considerato un segno di buona fortuna"
+        },
+        {
+            "start": 30.166,
+            "end": 34.666,
+            "text": "e si diceva che scendesse dal cielo solo quando l'impero era governato con virtù."
+        },
+        {
+            "start": 35.208,
+            "end": 38.666,
+            "text": "Queste credenze si diffusero in seguito anche in Giappone."
+        },
+        {
+            "start": 39.125,
+            "end": 41.916,
+            "text": "L'uso della fenice nell'arte giapponese risale"
+        },
+        {
+            "start": 41.916,
+            "end": 45.666,
+            "text": "al periodo Asuka, tra il VI e il VII secolo."
+        },
+        {
+            "start": 46.208,
+            "end": 47.958,
+            "text": "Nel piatto che vedete qui"
+        },
+        {
+            "start": 47.958,
+            "end": 52.5,
+            "text": "gli uccelli sono raffigurati tra i fiori e le foglie dell'albero di paulownia,"
+        },
+        {
+            "start": 52.875,
+            "end": 55.916,
+            "text": "che si ritiene fosse l'albero dove viveva la fenice."
+        },
+        {
+            "start": 56.5,
+            "end": 60.125,
+            "text": "Insieme potrebbero simboleggiare l'armonia coniugale,"
+        },
+        {
+            "start": 60.458,
+            "end": 65.833,
+            "text": "rendendo questo oggetto un regalo di nozze perfetto. Per creare questo disegno,"
+        },
+        {
+            "start": 66.041,
+            "end": 69.666,
+            "text": "l'artista ha dipinto i dettagli blu con pigmento di cobalto."
+        },
+        {
+            "start": 70.208,
+            "end": 73.125,
+            "text": "Il pezzo è stato poi invetriato e cotto"
+        },
+        {
+            "start": 73.125,
+            "end": 76.458,
+            "text": "prima di aggiungere i colori rosso, verde e viola."
+        },
+        {
+            "start": 76.958,
+            "end": 79.875,
+            "text": "Una seconda cottura ha completato la decorazione."
+        }
+    ],
+    "lu-video-eng": [
+        {
+            "start": 5.666,
+            "end": 7.375,
+            "text": "Have you looked carefully at the large"
+        },
+        {
+            "start": 7.375,
+            "end": 8.875,
+            "text": "bowl in this display case?"
+        },
+        {
+            "start": 8.875,
+            "end": 11.333,
+            "text": "It is beautifully painted with gold pigment,"
+        },
+        {
+            "start": 11.333,
+            "end": 14.25,
+            "text": "showing a classic Chinese river landscape."
+        },
+        {
+            "start": 14.25,
+            "end": 16.25,
+            "text": "You can see the mountains and trees,"
+        },
+        {
+            "start": 16.25,
+            "end": 17.875,
+            "text": "a fisherman in his boat"
+        },
+        {
+            "start": 17.875,
+            "end": 20.541,
+            "text": "and someone crossing a small bridge."
+        },
+        {
+            "start": 20.541,
+            "end": 23.958,
+            "text": "Just the kind of peaceful of setting where a scholar like me"
+        },
+        {
+            "start": 23.958,
+            "end": 25.541,
+            "text": "would feel most at ease,"
+        },
+        {
+            "start": 25.541,
+            "end": 28.375,
+            "text": "reciting a poem along the riverbank."
+        },
+        {
+            "start": 28.375,
+            "end": 31.0,
+            "text": "Long ago, in the early years of my life,"
+        },
+        {
+            "start": 31.0,
+            "end": 33.875,
+            "text": "I tried to become a government official."
+        },
+        {
+            "start": 33.875,
+            "end": 37.208,
+            "text": "But I failed miserably and abandoned court politics"
+        },
+        {
+            "start": 37.208,
+            "end": 39.75,
+            "text": "for a tranquil life and in time,"
+        },
+        {
+            "start": 39.75,
+            "end": 42.375,
+            "text": "I became one of the Eight Immortals."
+        },
+        {
+            "start": 42.375,
+            "end": 45.541,
+            "text": "But let us not wander too far from the bowl!"
+        },
+        {
+            "start": 45.541,
+            "end": 47.416,
+            "text": "Notice how the gold pigment shines"
+        },
+        {
+            "start": 47.416,
+            "end": 50.0,
+            "text": "so vividly against the soft blue background."
+        },
+        {
+            "start": 50.958,
+            "end": 53.458,
+            "text": "To create this speckled blue effect,"
+        },
+        {
+            "start": 53.458,
+            "end": 55.875,
+            "text": "craftsmen blew cobalt pigment through"
+        },
+        {
+            "start": 55.875,
+            "end": 59.333,
+            "text": "a bamboo tube covered with gauze onto the surface"
+        },
+        {
+            "start": 59.333,
+            "end": 61.041,
+            "text": "of the unglazed vessel."
+        },
+        {
+            "start": 61.041,
+            "end": 64.333,
+            "text": "Imagine the skill and patience that were required!"
+        },
+        {
+            "start": 64.333,
+            "end": 66.875,
+            "text": "It was also a costly process,"
+        },
+        {
+            "start": 66.875,
+            "end": 69.791,
+            "text": "the bowl had to be fired several times,"
+        },
+        {
+            "start": 69.791,
+            "end": 73.083,
+            "text": "and gold pigment was an expensive material."
+        },
+        {
+            "start": 73.083,
+            "end": 75.875,
+            "text": "This type of porcelain is characteristic of the reign"
+        },
+        {
+            "start": 75.875,
+            "end": 80.875,
+            "text": "of Emperor Kangxi and was made in the early 18th century."
+        }
+    ],
+    "lu-video-ita": [
+        {
+            "start": 5.333,
+            "end": 7.708,
+            "text": "Hai osservato attentamente la grande ciotola"
+        },
+        {
+            "start": 7.708,
+            "end": 9.291,
+            "text": "esposta in questa vetrina?"
+        },
+        {
+            "start": 10.208,
+            "end": 13.0,
+            "text": "E’ splendidamente dipinta con pigmenti dorati"
+        },
+        {
+            "start": 13.0,
+            "end": 15.625,
+            "text": "e raffigura un classico paesaggio cinese"
+        },
+        {
+            "start": 15.625,
+            "end": 17.083,
+            "text": "dove scorre un fiume."
+        },
+        {
+            "start": 17.375,
+            "end": 20.291,
+            "text": "Si possono vedere le montagne e gli alberi,"
+        },
+        {
+            "start": 20.291,
+            "end": 22.25,
+            "text": "un pescatore sulla sua barca"
+        },
+        {
+            "start": 22.25,
+            "end": 25.0,
+            "text": "e qualcuno che attraversa un piccolo ponte."
+        },
+        {
+            "start": 25.208,
+            "end": 27.416,
+            "text": "Proprio il tipo di ambiente tranquillo"
+        },
+        {
+            "start": 27.416,
+            "end": 28.875,
+            "text": "in cui uno studioso  come me"
+        },
+        {
+            "start": 29.0,
+            "end": 31.0,
+            "text": "si sentirebbe più a suo agio"
+        },
+        {
+            "start": 31.083,
+            "end": 33.875,
+            "text": "recitando una poesia lungo la riva del fiume."
+        },
+        {
+            "start": 34.208,
+            "end": 37.208,
+            "text": "Molto tempo fa, nei primi anni della mia vita,"
+        },
+        {
+            "start": 37.416,
+            "end": 40.416,
+            "text": "cercai di diventare un funzionario del governo."
+        },
+        {
+            "start": 40.791,
+            "end": 42.708,
+            "text": "Siccome non vi sono riuscito,"
+        },
+        {
+            "start": 42.875,
+            "end": 44.833,
+            "text": "ho abbandonato la politica di corte"
+        },
+        {
+            "start": 44.833,
+            "end": 47.416,
+            "text": "per una vita tranquilla, e col tempo,"
+        },
+        {
+            "start": 47.416,
+            "end": 50.0,
+            "text": "sono divenuto uno degli otto immortali."
+        },
+        {
+            "start": 50.958,
+            "end": 53.958,
+            "text": "Ma non allontaniamoci troppo dalla ciotola."
+        },
+        {
+            "start": 54.5,
+            "end": 57.041,
+            "text": "Notate come il pigmento dorato risplende"
+        },
+        {
+            "start": 57.041,
+            "end": 60.041,
+            "text": "in modo brillante sullo sfondo blu tenue."
+        },
+        {
+            "start": 60.333,
+            "end": 63.333,
+            "text": "Per creare questo effetto blu sfumato,"
+        },
+        {
+            "start": 63.458,
+            "end": 66.125,
+            "text": "gli artigiani soffiavano pigmento di cobalto"
+        },
+        {
+            "start": 66.125,
+            "end": 67.666,
+            "text": "attraverso un tubo di bambù"
+        },
+        {
+            "start": 67.666,
+            "end": 69.166,
+            "text": "ricoperto di garza"
+        },
+        {
+            "start": 69.458,
+            "end": 72.875,
+            "text": "direttamente sulla superficie del vaso non smaltato."
+        },
+        {
+            "start": 73.875,
+            "end": 77.0,
+            "text": "Immaginate l'abilità e la pazienza necessaria."
+        },
+        {
+            "start": 77.5,
+            "end": 80.5,
+            "text": "Era anche un processo costoso"
+        },
+        {
+            "start": 80.5,
+            "end": 82.625,
+            "text": "per il prezioso pigmento dorato"
+        },
+        {
+            "start": 82.833,
+            "end": 85.708,
+            "text": "e perché la ciotola doveva essere cotta più volte."
+        },
+        {
+            "start": 86.291,
+            "end": 88.25,
+            "text": "Questo tipo di porcellana"
+        },
+        {
+            "start": 88.25,
+            "end": 91.125,
+            "text": "è caratteristico del regno dell'imperatore Kangxi."
+        },
+        {
+            "start": 91.75,
+            "end": 94.791,
+            "text": "La ciotola fu realizzata all'inizio del XVIII secolo."
+        }
+    ],
+    "tigre-video-eng": [
+        {
+            "start": 2.291,
+            "end": 3.625,
+            "text": "Let’s talk about me!"
+        },
+        {
+            "start": 4.458,
+            "end": 7.333,
+            "text": "I may be small, but I stand for great strength."
+        },
+        {
+            "start": 8.208,
+            "end": 10.458,
+            "text": "Tigers aren’t actually native to Japan,"
+        },
+        {
+            "start": 11.083,
+            "end": 14.25,
+            "text": "and the artist who made me had certainly never seen one in real life."
+        },
+        {
+            "start": 15.25,
+            "end": 18.375,
+            "text": "Still, tigers often appear in Japanese art,"
+        },
+        {
+            "start": 19.0,
+            "end": 21.708,
+            "text": "usually looking rather catlike and even friendly."
+        },
+        {
+            "start": 22.125,
+            "end": 25.666,
+            "text": "Artists were inspired by images from China and Korea,"
+        },
+        {
+            "start": 25.833,
+            "end": 29.208,
+            "text": "where real tigers did roam. Traditionally, I represent"
+        },
+        {
+            "start": 29.208,
+            "end": 31.208,
+            "text": "one of the four cardinal directions:"
+        },
+        {
+            "start": 31.833,
+            "end": 35.166,
+            "text": "the Blue Dragon of the East, the White Tiger of the West,"
+        },
+        {
+            "start": 35.5,
+            "end": 37.0,
+            "text": "the Red Phoenix of the South,"
+        },
+        {
+            "start": 37.541,
+            "end": 40.583,
+            "text": "and the Black Tortoise entwined with a Serpent of the North."
+        },
+        {
+            "start": 41.416,
+            "end": 42.791,
+            "text": "You can see my companions"
+        },
+        {
+            "start": 42.791,
+            "end": 45.333,
+            "text": "depicted on some of the other objects nearby."
+        },
+        {
+            "start": 46.166,
+            "end": 49.708,
+            "text": "Together, we protect the universe and ward off evil."
+        },
+        {
+            "start": 50.833,
+            "end": 54.291,
+            "text": "I’m made of porcelain, painted in delicate cobalt blue."
+        },
+        {
+            "start": 55.125,
+            "end": 58.375,
+            "text": "Look closely, and you’ll notice the artist even painted"
+        },
+        {
+            "start": 58.375,
+            "end": 60.291,
+            "text": "each strand of my fur!"
+        },
+        {
+            "start": 60.833,
+            "end": 63.333,
+            "text": "I’m a fine example of Hirado ware,"
+        },
+        {
+            "start": 63.333,
+            "end": 66.291,
+            "text": "a type of porcelain that became popular in Japan"
+        },
+        {
+            "start": 66.291,
+            "end": 69.75,
+            "text": "from the late 18th century, known for its small,"
+        },
+        {
+            "start": 69.75,
+            "end": 71.75,
+            "text": "finely detailed figures."
+        }
+    ],
+    "tigre-video-ita": [
+        {
+            "start": 2.291,
+            "end": 3.25,
+            "text": "Parliamo di me!"
+        },
+        {
+            "start": 3.25,
+            "end": 6.666,
+            "text": "Sarò anche piccolo, ma sono sinonimo di grande forza."
+        },
+        {
+            "start": 6.916,
+            "end": 9.75,
+            "text": "Le tigri non sono originarie del Giappone"
+        },
+        {
+            "start": 9.75,
+            "end": 13.666,
+            "text": "e l'artista che mi ha creato non ne aveva mai vista una dal vivo."
+        },
+        {
+            "start": 14.208,
+            "end": 18.25,
+            "text": "Tuttavia, le tigri compaiono spesso nell'arte giapponese,"
+        },
+        {
+            "start": 18.625,
+            "end": 23.25,
+            "text": "solitamente con un aspetto simile a quello dei gatti e persino amichevole."
+        },
+        {
+            "start": 23.791,
+            "end": 28.375,
+            "text": "Gli artisti si sono ispirati alle immagini  provenienti dalla Cina e dalla Corea,"
+        },
+        {
+            "start": 28.708,
+            "end": 31.708,
+            "text": "dove le tigri reali vagavano liberamente."
+        },
+        {
+            "start": 31.708,
+            "end": 35.708,
+            "text": "Tradizionalmente rappresento  uno dei quattro punti cardinali:"
+        },
+        {
+            "start": 35.708,
+            "end": 37.708,
+            "text": "il Drago Blu dell'Est,"
+        },
+        {
+            "start": 37.958,
+            "end": 41.375,
+            "text": "la Tigre Bianca dell'Ovest, la Fenice Rossa del Sud"
+        },
+        {
+            "start": 41.625,
+            "end": 45.166,
+            "text": "e la Tartaruga Nera intrecciata con un serpente del Nord."
+        },
+        {
+            "start": 45.333,
+            "end": 50.958,
+            "text": "Potete vedere i miei compagni raffigurati su alcuni degli altri oggetti vicini."
+        },
+        {
+            "start": 51.208,
+            "end": 54.208,
+            "text": "Insieme proteggiamo l'universo e allontaniamo il male."
+        },
+        {
+            "start": 54.708,
+            "end": 59.041,
+            "text": "Sono fatto di porcellana e dipinto in un delicato blu cobalto."
+        },
+        {
+            "start": 59.666,
+            "end": 63.083,
+            "text": "Guardando da vicino, noterete che l'artista ha dipinto"
+        },
+        {
+            "start": 63.083,
+            "end": 66.083,
+            "text": "persino ogni singolo pelo del mio manto!"
+        },
+        {
+            "start": 66.125,
+            "end": 69.125,
+            "text": "Sono un ottimo esempio di ceramica Hirado,"
+        },
+        {
+            "start": 69.125,
+            "end": 72.0,
+            "text": "un tipo di porcellana diventato popolare in Giappone"
+        },
+        {
+            "start": 72.0,
+            "end": 74.333,
+            "text": "dalla fine del XVIII secolo,"
+        },
+        {
+            "start": 74.833,
+            "end": 78.208,
+            "text": "noto per le figure piccole e finemente dettagliate."
+        }
+    ],
+    "zho-video-eng": [
+        {
+            "start": 2.583,
+            "end": 4.416,
+            "text": "Have you noticed the magnificent sculpture"
+        },
+        {
+            "start": 4.416,
+            "end": 6.083,
+            "text": "depicting a man on horseback?"
+        },
+        {
+            "start": 6.5,
+            "end": 8.5,
+            "text": "See how he leans out from his saddle"
+        },
+        {
+            "start": 8.625,
+            "end": 10.5,
+            "text": "once holding something in his hand."
+        },
+        {
+            "start": 10.625,
+            "end": 13.0,
+            "text": "A polo stick! Yes, you heard that right."
+        },
+        {
+            "start": 13.333,
+            "end": 15.0,
+            "text": "Polo was already played in China"
+        },
+        {
+            "start": 15.0,
+            "end": 16.333,
+            "text": "during the eighth century."
+        },
+        {
+            "start": 16.375,
+            "end": 19.291,
+            "text": "It was known as - jiqiu, meaning “strike ball,”"
+        },
+        {
+            "start": 19.583,
+            "end": 22.625,
+            "text": "and was a popular pastime at the imperial court."
+        },
+        {
+            "start": 22.75,
+            "end": 25.458,
+            "text": "Even women were allowed to take part in the game."
+        },
+        {
+            "start": 25.583,
+            "end": 27.625,
+            "text": "In fact, during the Tang dynasty, women"
+        },
+        {
+            "start": 27.625,
+            "end": 29.083,
+            "text": "enjoyed greater freedom"
+        },
+        {
+            "start": 29.083,
+            "end": 31.458,
+            "text": "than in many other periods of Chinese history."
+        },
+        {
+            "start": 31.458,
+            "end": 33.416,
+            "text": "Horses were highly valued"
+        },
+        {
+            "start": 33.416,
+            "end": 36.0,
+            "text": "admired for their strength and endurance."
+        },
+        {
+            "start": 36.0,
+            "end": 38.291,
+            "text": "They served both in the military and"
+        },
+        {
+            "start": 38.291,
+            "end": 41.208,
+            "text": "in leisure pursuits such as hunting and polo."
+        },
+        {
+            "start": 41.208,
+            "end": 43.541,
+            "text": "But owning a horse was not for everyone;"
+        },
+        {
+            "start": 43.541,
+            "end": 46.458,
+            "text": "it depended on one’s rank and status in society."
+        },
+        {
+            "start": 46.75,
+            "end": 49.375,
+            "text": "The ceramic horse you see here was likely made"
+        },
+        {
+            "start": 49.375,
+            "end": 51.333,
+            "text": "for the tomb of a wealthy individual."
+        },
+        {
+            "start": 51.333,
+            "end": 54.083,
+            "text": "It would have been placed alongside other objects"
+        },
+        {
+            "start": 54.083,
+            "end": 56.75,
+            "text": "that symbolized the deceased’s status and power"
+        },
+        {
+            "start": 56.75,
+            "end": 59.458,
+            "text": "believed to be essential companions in the afterlife."
+        },
+        {
+            "start": 59.458,
+            "end": 62.666,
+            "text": "Even in my own time, during the Han dynasty,"
+        },
+        {
+            "start": 62.666,
+            "end": 65.291,
+            "text": "more than two thousand years ago,"
+        },
+        {
+            "start": 65.458,
+            "end": 67.375,
+            "text": "such traditions were already well established."
+        },
+        {
+            "start": 67.375,
+            "end": 69.166,
+            "text": "But since I became an immortal,"
+        },
+        {
+            "start": 69.166,
+            "end": 71.916,
+            "text": "it is something I never had to worry about."
+        }
+    ],
+    "zho-video-ita": [
+        {
+            "start": 2.583,
+            "end": 3.541,
+            "text": "Avete notato la"
+        },
+        {
+            "start": 3.541,
+            "end": 6.541,
+            "text": "magnifica scultura che ritrae un uomo a cavallo?"
+        },
+        {
+            "start": 6.791,
+            "end": 9.083,
+            "text": "Osservate come si sporge dalla sella"
+        },
+        {
+            "start": 9.25,
+            "end": 10.958,
+            "text": "tenendo in mano una mazza da polo!"
+        },
+        {
+            "start": 11.458,
+            "end": 13.0,
+            "text": "Sì, avete capito bene:"
+        },
+        {
+            "start": 13.0,
+            "end": 16.0,
+            "text": "il polo era già praticato in Cina nell'VIII secolo."
+        },
+        {
+            "start": 16.041,
+            "end": 17.708,
+            "text": "Era conosciuto come jiqiu,"
+        },
+        {
+            "start": 17.708,
+            "end": 20.416,
+            "text": "che significa letteralmente “colpire la palla”"
+        },
+        {
+            "start": 20.791,
+            "end": 23.791,
+            "text": "ed era un passatempo popolare alla corte imperiale."
+        },
+        {
+            "start": 24.041,
+            "end": 26.416,
+            "text": "Anche le donne potevano partecipare al gioco."
+        },
+        {
+            "start": 26.416,
+            "end": 28.333,
+            "text": "Infatti, durante la dinastia Tang,"
+        },
+        {
+            "start": 28.333,
+            "end": 30.125,
+            "text": "le donne godevano di una maggiore"
+        },
+        {
+            "start": 30.125,
+            "end": 32.166,
+            "text": "libertà rispetto a molti altri periodi"
+        },
+        {
+            "start": 32.166,
+            "end": 33.583,
+            "text": "della storia cinese."
+        },
+        {
+            "start": 33.75,
+            "end": 36.291,
+            "text": "I cavalli erano molto apprezzati e ammirati"
+        },
+        {
+            "start": 36.291,
+            "end": 38.208,
+            "text": "per la loro forza e resistenza."
+        },
+        {
+            "start": 38.416,
+            "end": 40.875,
+            "text": "Venivano utilizzati sia in campo militare"
+        },
+        {
+            "start": 40.875,
+            "end": 43.625,
+            "text": "che per attività ricreative come la caccia e il polo."
+        },
+        {
+            "start": 43.708,
+            "end": 46.708,
+            "text": "Ma possedere un cavallo non era alla portata di tutti,"
+        },
+        {
+            "start": 46.916,
+            "end": 49.833,
+            "text": "dipendeva dal rango e dallo status sociale."
+        },
+        {
+            "start": 49.833,
+            "end": 51.708,
+            "text": "Il cavallo in ceramica che vedete qui"
+        },
+        {
+            "start": 51.708,
+            "end": 54.083,
+            "text": "è stato probabilmente realizzato per la tomba"
+        },
+        {
+            "start": 54.083,
+            "end": 56.5,
+            "text": "di una persona facoltosa, da collocare"
+        },
+        {
+            "start": 56.5,
+            "end": 57.875,
+            "text": "accanto ad altri oggetti"
+        },
+        {
+            "start": 57.875,
+            "end": 61.0,
+            "text": "che simboleggiavano lo status e il potere del defunto."
+        },
+        {
+            "start": 61.166,
+            "end": 62.333,
+            "text": "Tutti questi oggetti"
+        },
+        {
+            "start": 62.333,
+            "end": 64.958,
+            "text": "erano ritenuti compagni essenziali nell'aldilà."
+        },
+        {
+            "start": 65.125,
+            "end": 67.416,
+            "text": "Anche ai miei tempi, durante la dinastia Han,"
+        },
+        {
+            "start": 67.5,
+            "end": 68.916,
+            "text": "più di 2000 anni fa,"
+        },
+        {
+            "start": 69.166,
+            "end": 72.041,
+            "text": "queste tradizioni erano già ben consolidate."
+        },
+        {
+            "start": 72.208,
+            "end": 74.375,
+            "text": "Ma da quando sono diventato immortale"
+        },
+        {
+            "start": 74.375,
+            "end": 77.541,
+            "text": "è qualcosa di cui non mi sono mai dovuto preoccupare!"
+        }
+    ]
+}
