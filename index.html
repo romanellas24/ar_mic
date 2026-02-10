@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> 
-    <script src="js/aframe-chromakey-material-master/index.js"></script> 
+    <script src="https://unpkg.com/aframe-chromakey-material-fanter/dist/aframe-chromakey-material.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="js/marker-video-controller.js" defer></script>
     <script src="js/ui-controls.js" defer></script>
@@ -22,10 +22,11 @@
   <button id="change-len-btn">ENG</button>
 
   <body style="margin: 0; overflow: hidden">
-    <!-- LOADING OVERLAY -->
+
+    <!-- LOADING SPINNER -->
     <div id="loading-overlay">
       <div class="spinner"></div>
-      <p>Caricamento...</p>
+      <p>Caricamento…</p>
     </div>
 
     <!-- AR SCENE -->
@@ -39,7 +40,7 @@
       <a-assets id="drago">
         <video
           id="drago-video-ita"
-          src="/media/drago/drago_ITA.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/drago/drago_ITA.webm"
           loop
           playsinline
           preload="metadata"
@@ -49,7 +50,7 @@
         </video>
         <video
           id="drago-video-eng"
-          src="/media/drago/drago_ENG.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/drago/drago_ENG.webm"
           loop
           playsinline
           preload="metadata"
@@ -78,7 +79,7 @@
       <a-assets id="bod">
         <video
           id="bod-video-ita"
-          src="/media/bod/bod_ITA.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/bod/bod_ITA.webm"
           loop
           playsinline
           preload="none"
@@ -87,7 +88,7 @@
         ></video>
         <video
           id="bod-video-eng"
-          src="/media/bod/bod_ENG.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/bod/bod_ENG.webm"
           loop
           playsinline
           preload="none"
@@ -116,7 +117,7 @@
       <a-assets id="lu">
         <video
           id="lu-video-ita"
-          src="/media/lu/lu_ITA.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/lu/lu_ITA.webm"
           loop
           playsinline
           preload="none"
@@ -125,7 +126,7 @@
         ></video>
         <video
           id="lu-video-eng"
-          src="/media/lu/lu_ENG.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/lu/lu_ENG.webm"
           loop
           playsinline
           preload="none"
@@ -154,7 +155,7 @@
       <a-assets id="tigre">
         <video
           id="tigre-video-ita"
-          src="/media/tiger/tigre_ITA.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/tiger/tigre_ITA.webm"
           loop
           playsinline
           preload="none"
@@ -163,7 +164,7 @@
         ></video>
         <video
           id="tigre-video-eng"
-          src="/media/tiger/tigre_ENG.webm"
+          src="https://cdn.jsdelivr.net/gh/Fanter2033/ar_mic@main/public/media/tiger/tigre_ENG.webm"
           loop
           playsinline
           preload="none"
@@ -238,23 +239,26 @@
         <span>Attiva Audio</span>
       </button>
 
-      <button id="sub-btn">
+      <button id="sub-btn" class="off">
         <span>CC</span>
+        <span id="sub-btn-strike" class="strike-through"></span>
       </button>
 
       <div class="backdrop" id="backdrop">
         <div class="dialog">
+          <button id="close">&times;</button>
           <h2>Tutorial</h2>
           <ul id="tutorial_list">
-            <li>Alzare il volume del telefono e acconsentire all'accesso della webcam.</li>
+            <li>Alza il volume del telefono e acconsenti all'accesso della webcam.</li>
 
-            <li>Inquadrare gli ideogrammi presenti nelle vetrine e rimanere fermi.</li>
+            <li>Inquadra gli ideogrammi presenti nelle vetrine e rimani fermo.</li>
 
-            <li>Puoi cambiare la lingua tramite il pulsante in alto a sinistra.</li>
+            <li>Puoi cambiare la lingua tramite il pulsante in alto a sinistra e attivare i sottotitoli tramite il pulsante 'CC'.</li>
 
             <li>Per una migliore esperienza, accedi al sito tramite il browser Chrome.</li>
+
+            <li>Per gli utenti iOS, il video partirà senza audio. Clicca il tasto "attiva audio" per abilitarlo.</li>
           </ul>
-          <button id="close" style="margin-top: 14px">Close</button>
         </div>
       </div>
     </div>

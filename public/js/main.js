@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       plane.setAttribute(
         "material",
         `${currentMaterial}; 
-        shader: chromakey-custom; 
+        shader: chromakey; 
         color: 0.133 1 0.027; 
         tolerance: 0.40; 
         smoothness: 0.40;`,
@@ -45,5 +45,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (window.UIControls) {
     window.UIControls.init();
+  }
+
+  // Hide loading spinner when scene is ready
+  const scene = document.querySelector("a-scene");
+  const overlay = document.getElementById("loading-overlay");
+  if (scene && overlay) {
+    const hide = () => {
+      overlay.classList.add("fade-out");
+      overlay.addEventListener("transitionend", () => overlay.remove());
+    };
+    if (scene.hasLoaded) {
+      hide();
+    } else {
+      scene.addEventListener("loaded", hide);
+    }
   }
 });

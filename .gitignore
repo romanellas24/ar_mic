@@ -5,3 +5,4 @@ node_modules
 example
 /public/js/aframe-chromakey-material-master/dist
 converter.py
+aframe-chromakey-material-master

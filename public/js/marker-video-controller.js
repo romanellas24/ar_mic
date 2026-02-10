@@ -7,7 +7,7 @@
         /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
       let currentLanguage = "ITA";
       let subtitlesDatabase = {};
-      let areSubtitlesEnabled = true;
+      let areSubtitlesEnabled = false;
 
       const planesInfos = Array.from(planes)
         .map((plane) => {

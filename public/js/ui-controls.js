@@ -23,14 +23,18 @@
 
       // Text for tutorial
       const textIT = [
-        "Alzare il volume del telefono e acconsentire all'accesso della webcam.",
-        "Inquadrare gli ideogrammi presenti nelle vetrine e rimanere fermi.",
-        "Puoi cambiare la lingua tramite il pulsante in alto a sinistra.",
+        "Alza il volume del telefono e acconsenti all'accesso della webcam.",
+        "Inquadra gli ideogrammi presenti nelle vetrine e rimani fermo.",
+        'Puoi cambiare la lingua tramite il pulsante in alto a sinistra e attivare i sottotitoli tramite il pulsante "CC".',
+        "Per una migliore esperienza, accedi al sito tramite il browser Chrome.",
+        'Per gli utenti iOS, il video partirà senza audio. Clicca il tasto "attiva audio" per abilitarlo.'
       ];
       const textEN = [
         "Turn up your phone's volume and allow camera access.",
         "Point the camera at the ideograms in the showcases and stay still.",
-        "You can change the language using the button at the top left.",
+        'You can change the language using the button at the top left and activate subtitles with the "CC" button',
+        "For a better experience, access the website via Chroma browser.", 
+        'For iOS users, the video will start without audio. Push the button "activate audio" to ebable it.'
       ];
 
       function enterFullscreen(element = document.documentElement) {
@@ -124,8 +128,10 @@
 
       // Subtitle event
       if (subBtn) {
+        const strike = document.getElementById("sub-btn-strike");
         subBtn.addEventListener("click", () => {
-          const areSubtitlesEnabled = subBtn.classList.toggle("active");
+          const areSubtitlesEnabled = !subBtn.classList.toggle("off");
+          if (strike) strike.classList.toggle("visible", areSubtitlesEnabled);
           window.dispatchEvent(
             new CustomEvent("subtitleToggle", { detail: areSubtitlesEnabled }),
           );
